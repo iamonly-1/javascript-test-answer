@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>two repeating elements</title>
+</head>
+<body>
+     <p>Pinting two repeating elements.
+</body>
+<script>
+	function printRepeating(arr,size)
+	{
+		var i;
+		document.write("The repeating elements are : ");
+
+			for (var i = 0; i < size; i++) {
+				if (arr[Math.abs(arr[i])]>0)
+					arr[Math.abs(arr[i])] = -arr[Math.abs(arr[i])];
+				else
+					document.write(Math.abs(arr[i]) + "");
+			}
+	}
+			var arr = [1,2,3,4,5,6,6,7,5,4,8,9,9,0];
+			var arr_size = arr.length;
+			printRepeating(arr, arr_size);
+	
+</script>
+</html>

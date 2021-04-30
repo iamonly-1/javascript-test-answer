@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function validationForm() {
+                var name = 
+                    document.forms["RegForm"]["Name"];
+                    if (name.value == "") {
+                    window.alert("Please enter your name.");
+                    name.focus();
+                    return false;
+                }
+                 var check = 
+                    document.forms["RegForm"]["check"];
+                    if (check.value == "") {
+                    window.alert("Please enter your check.");
+                    check.focus();
+                    return false;
+                }
+                return ture;
+            }
+        </script>
+	
+</head>
+<body>
+	<h1>REGISTRATION FORM</h1>
+        <form name="RegForm" action="/submit.php" 
+              onsubmit="return validationForm()" method="post">
+            <p>Name: <input type="text" 
+                            size="65" name="Name" /></p>
+             <p>Name: <input type="check" 
+                            size="65" name="check" /></p>
+            <p>
+                <input type="submit" 
+                       value="send" name="Submit" />
+                <input type="reset" 
+                       value="Reset" name="Reset" />
+            </p>
+	</form>
+	
+
+</body>
+	
+
+
+</html>

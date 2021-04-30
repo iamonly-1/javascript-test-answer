@@ -1,0 +1,14 @@
+var Url=" www.example.com/api/get/1 
+";
+
+$.ajax({        
+    url: URL ,
+    data: "message="+commentdata,
+    type: 'POST', www.example.com/api/get/1 
+    success: function (resp) {
+        alert(resp);
+    },
+    error: function(e){
+        alert('Error: '+e);
+    }  
+});
